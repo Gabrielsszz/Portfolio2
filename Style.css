@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap');
+*{
+    font-family: 'Victor Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('wallpaper002.jpeg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+header{
+    max-width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    background: rgba(12, 7, 7, 0.719);    
+}
+
+nav{
+    display: flex;
+    max-height: 100%;
+    justify-content:end;
+    align-items: center;
+    height: 4rem;
+
+}
+
+.dd-menu ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dd-menu ul{
+    background: rgba(12, 7, 7, 0.301);    
+}
+
+.dd-menu ul li{
+    display: inline;
+    position: relative;
+}
+ 
+.dd-menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .4s;
+}
+
+.dd-menu ul li a:hover {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+/*construção do sub menu*/
+.dd-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dd-menu ul li:hover ul{
+    display: block;
+}
+
+.dd-menu ul ul{
+    width: 100px;
+}
+
+.dd-menu ul ul li a{
+    display: block;
+}
+
+main,aside{
+    min-height: 75vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: rgb(233, 197, 233);
+}
+
+main{
+    display: flex;
+    width: 70%;
+    float: left;
+    font-size: 14px;
+
+}
+
+.hit{
+    margin-top: 10vh;
+    margin-left: 9vw;
+}
+
+.res{
+    margin-top: 2vh;
+    margin-left: 9vw;
+}
+
+aside{
+    width: 30%;
+    float: right;
+    border-left: px solid white;
+}
+
+footer{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+}
